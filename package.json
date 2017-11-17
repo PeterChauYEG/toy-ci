@@ -7,10 +7,12 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fixcode": "npm run lint -- --fix",
+    "lint": "standard",
+    "start": "react-scripts start",
+    "test": "npm run lint && react-scripts test --env=jsdom"
   },
   "standard": {
     "globals": [
