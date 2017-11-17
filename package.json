@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "react": "^16.1.1",
-    "react-dom": "^16.1.1",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -12,5 +11,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "standard": {
+    "globals": [
+      "fetch",
+      "it",
+      "URL"
+    ]
+  },
+  "devDependencies": {
+    "react-dom": "^16.1.1",
+    "standard": "^10.0.3"
   }
 }
